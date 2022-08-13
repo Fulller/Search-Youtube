@@ -15,16 +15,18 @@ body{
 #form{
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
 }
 #input{
     padding: 12px;
     line-height: 100%;
-    flex: 1;
     font-size: 26px;
     background-color: rgb(18,18,18);
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
+    flex: 1;
+    max-width: 75%;
 }
 #submit{
     font-size: 22px;
