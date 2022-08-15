@@ -13,7 +13,7 @@ let app = {
         }
     },
     render: function (app){
-        return fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${app.querry}&key=AIzaSyBzZYEEXnO39tIoiFn0QF5sNCk09UkxGe0`)
+        return fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${app.querry}&maxResults=10&key=${key}`)
                 .then(response=>{
                 return  response.json()
                 }
