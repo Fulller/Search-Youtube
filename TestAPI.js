@@ -2,7 +2,7 @@ let key = 'AIzaSyBzZYEEXnO39tIoiFn0QF5sNCk09UkxGe0'
 let root = document.querySelector('#root')
 let input = document.querySelector('#input')
 let submit = document.querySelector('#submit')
-
+let web = document.documentElement
 
 let app = {
     querry: 'sontungmtp',
@@ -10,6 +10,11 @@ let app = {
         submit.onclick = function (){
             app.querry = input.value
             app.start()
+        }
+        web.onkeydown = function (e){
+            if(e.which == 13){
+                submit.click()
+            }
         }
     },
     render: function (app){
